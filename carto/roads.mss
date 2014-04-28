@@ -2292,7 +2292,7 @@
     shield-name: "[ref]";
     shield-size: 10;
    // shield-fill: #fff;---------------------------------------------------------------------------------------------------------------------------kullo
-    shield-fill: red;
+    shield-fill: #fff;
     shield-placement: line;
     shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
