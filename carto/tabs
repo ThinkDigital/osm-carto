@@ -1,0 +1,7 @@
+.tabs {
+    float: left;
+    position: relative;
+    overflow-y: scroll;  /* new */
+    height: 30px;
+    padding-left: 10px;
+}
