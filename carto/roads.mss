@@ -2230,7 +2230,7 @@
     shield-size: 10;
     shield-fill: #fff;
     shield-placement: line;
-    shield-file: url("symbols/tru_shield[length].png");
+    shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2252,7 +2252,7 @@
     shield-size: 10;
     shield-fill: #fff;
     shield-placement: line;
-    shield-file: url("symbols/sec_shield[length].png");
+    shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2281,7 +2281,7 @@
     shield-size: 10;
     shield-fill: #fff;
     shield-placement: line;
-    shield-file: url("symbols/tru_shield[length].png");
+    shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2306,19 +2306,19 @@
     shield-size: 10;
     shield-fill: #fff;
     shield-placement: line;
-    shield-file: url("symbols/sec_shield[length].png");
+    shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
     shield-avoid-edges: true;
   }
 
-  [highway = 'tertiary'][bridge = 'no'][zoom >= 13] {
+  [highway = 'tertiary'][bridge = 'yes'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
     shield-fill: #fff;
     shield-placement: line;
-    shield-file: url("symbols/ter_shield[length].png");
+    shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
