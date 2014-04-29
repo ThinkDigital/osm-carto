@@ -1,13 +1,16 @@
 /* For the main linear features, such as roads and railways. */
 
+
+/*
+
 @motorway-fill: #89a4cb;
 @trunk-fill: #ffffff;
 @trunk-fill-alternative: #ffffff;
-@primary-fill: #ffffff;
-@secondary-fill: #ffffff;
-@tertiary-fill: #ffffff;
-@residential-fill: #ffffff;
-@service-fill: #ffffff;
+@primary-fill: red;
+@secondary-fill: green;
+@tertiary-fill: yellow;
+@residential-fill: black;
+@service-fill: blue;
 @living-street-fill: #ffffff;
 @pedestrian-fill: #ffffff;
 @road-fill: #ffffff;
@@ -24,34 +27,44 @@
 @taxiway-fill: #ffffff;
 @helipad-fill: #ffffff;
 
-/*
-@motorway-fill: #89a4cb;
-@trunk-fill: #ffffff;
-@trunk-fill-alternative: #ffffff;
-@primary-fill: #ffffff;
-@secondary-fill: #ffffff;
-@tertiary-fill: #ffffff;
-@residential-fill: #ffffff;
-@service-fill: #ffffff;
-@living-street-fill: #ffffff;
-@pedestrian-fill: #ffffff;
-@road-fill: #ffffff;
-@path-fill: #ffffff;
-@footway-fill: #ffffff;
-@steps-fill: #ffffff;
-@cycleway-fill: #ffffff;
-@bridleway-fill: #ffffff;
-@track-fill: #ffffff;
-@track-grade1-fill: #ffffff;
-@track-grade2-fill: #ffffff;
-@aeroway-fill: #ffffff;
-@runway-fill: #ffffff;
-@taxiway-fill: #ffffff;
-@helipad-fill: #ffffff;
 */
 
 
-@default-casing: red;
+
+
+
+
+
+                       // **Temporary backup of first colum of colors**
+
+
+@motorway-fill: #89a4cb;
+@trunk-fill: #ffffff;
+@trunk-fill-alternative: #ffffff;
+@primary-fill: #ffffff;
+@secondary-fill: #ffffff;
+@tertiary-fill: #ffffff;
+@residential-fill: #ffffff;
+@service-fill: #ffffff;
+@living-street-fill: #ffffff;
+@pedestrian-fill: #ffffff;
+@road-fill: #ffffff;
+@path-fill: #ffffff;
+@footway-fill: #ffffff;
+@steps-fill: #ffffff;
+@cycleway-fill: #ffffff;
+@bridleway-fill: #ffffff;
+@track-fill: #ffffff;
+@track-grade1-fill: #ffffff;
+@track-grade2-fill: #ffffff;
+@aeroway-fill: #ffffff;
+@runway-fill: #ffffff;
+@taxiway-fill: #ffffff;
+@helipad-fill: #ffffff;
+
+
+
+@default-casing: #ffffff;
 @motorway-casing: #ffffff;
 @trunk-casing: #ffffff;
 @primary-casing: #ffffff;
@@ -80,6 +93,10 @@
 @bridge-casing: #ffffff;
 
 /*
+
+                        **Backup of original colors**
+
+
 @motorway-fill: #89a4cb;
 @trunk-fill: #94d494;
 @trunk-fill-alternative: #97d397;
@@ -142,7 +159,7 @@
 @residential-tunnel-fill: lighten(@residential-fill, 10%);
 @living-street-tunnel-fill: lighten(@living-street-fill, 10%);
 
-//---------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
 
 
 @motorway-width-z12:              3;
@@ -159,8 +176,11 @@
 @tertiary-width-z13:              4.3;
 @residential-width-z13:           3.25;
 
-@tertiary-width-z14:              6;       //vaata seda hiljem!!!!!!!!!!!!
-@residential-width-z14:           3;       //vaata seda hiljem!!!!!!!!!!!!
+@tertiary-width-z14:              4;       //vaata seda hiljem!!!!!!!!!!!!
+@residential-width-z14:           1;       //vaata seda hiljem!!!!!!!!!!!!i
+@primary-width-z14:		  6;
+
+
 
 @motorway-width-z15:             10.3;
 @motorway-link-width-z15:         7.8;
@@ -169,9 +189,11 @@
 @secondary-width-z15:            8.24;
 @tertiary-width-z15:             6.9;
 @tertiary-link-width-z15:        6.6;
-@residential-width-z15:           5.15;
+@residential-width-z15:           3;
 
-@residential-width-z16:          11.2;      //vaata seda hiljem!!!!!!!!!!!!
+@residential-width-z16:          4;      //vaata seda hiljem!!!!!!!!!!!!
+@secondary-width-z16:            4;      //POOOOOOOOOOOOOOOOOOOOOOLLLEEELLLLIIIIII-------------------------------------------------------------------------------------------------------------------
+
 
 @motorway-width-z17:             13.5; // shouldn't be narrower than trunk!
 @motorway-link-width-z17:        11.5;
@@ -181,6 +203,8 @@
 @tertiary-width-z17:             9;
 @tertiary-link-width-z17:        8.7;
 @residential-width-z17:          6.75;
+
+@residential-width-z18:          6.75;
 
 @casing-width-z12:                0.5;
 @casing-width-z13:                0.75;
@@ -201,6 +225,8 @@
 
 
 /*
+
+                        **Backup of original numbers**
 
 @motorway-width-z12:              3;
 @motorway-link-width-z12:         1.5;
@@ -549,10 +575,11 @@
         .roads-casing, .tunnels-casing {
           line-width: 2;
           line-color: @pedestrian-casing;
+  
           line-cap: round;
           [zoom >= 14] { line-width: 3.6; }
-          [zoom >= 15] { line-width: 6.5; }
-          [zoom >= 16] { line-width: 9; }
+		  [zoom >= 15] { line-width: 4; }
+          [zoom >= 16] { line-width: 4; }
           .tunnels-casing {
             line-dasharray: 4,2;
           }
