@@ -17,6 +17,4 @@ Map {
 
 @water-color: #82d3ea;
 @land-color: #ebe5e0;
-//
-//
-//
+

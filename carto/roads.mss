@@ -2572,7 +2572,7 @@
 }
 
 .directions::directions {
-  [zoom >= 16] {
+  [zoom >= 17] {
     [oneway = 'yes'] {
       dira/line-width: 1;
       dira/line-dasharray: 0,12,10,152;

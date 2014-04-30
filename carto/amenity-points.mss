@@ -4,11 +4,6 @@
 
 .points {
 
-  [highway = 'traffic_signals'][zoom >= 17]::highway {
-    point-file: url('symbols/traffic_light.png');
-    point-placement: interior;
-  }
-
   [tourism = 'chalet'][zoom >= 17]::tourism {
     point-file: url('symbols/chalet.p.16.png');
     point-placement: interior;
