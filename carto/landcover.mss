@@ -1,19 +1,19 @@
 // --- Parks, woods, other green things ---
 // --- so para test ---
 
-@forest: #a0cf85;
-@grass: #cfeca8; // also meadow, common, garden, village_green, conservation
+@forest: #e0dece;
+@grass: #c2db84; // also meadow, common, garden, village_green, conservation
 @golf_course: #b5e3b5;
-@natural: #c6e4b4; // also grassland
-@park: #b6fdb6; // also recreation_ground
-@wood: #aed1a0;
+@natural: #c2db84; // also grassland
+@park: #c2db84; // also recreation_ground
+@wood: #e0dece;
 @vineyard: #abdf96;
 
 // --- sports ---
 
-@stadium: #3c9; // also sports_centre
+@stadium: #d5ef99; // also sports_centre
 @track: #74dcba;
-@pitch: #8ad3af;
+@pitch: #d5ef99;
 
 // --- Other ----
 
@@ -150,7 +150,7 @@
   [feature = 'leisure_recreation_ground'] {
     [zoom >= 10] {
       polygon-fill: @park;
-      polygon-opacity: 0.6;
+     // polygon-opacity: 0.6;
     }
   }
 
