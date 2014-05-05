@@ -4,11 +4,6 @@
 
 .points {
 
-  [tourism = 'chalet'][zoom >= 17]::tourism {
-    point-file: url('symbols/chalet.p.16.png');
-    point-placement: interior;
-  }
-
   [amenity = 'fuel'][zoom >= 17]::amenity {
     point-file: url('symbols/fuel.p.16.png');
     point-placement: interior;
@@ -288,8 +283,7 @@
 
   [tourism = 'hotel']::tourism,
   [tourism = 'motel']::tourism,
-  [tourism = 'hostel']::tourism,
-  [tourism = 'chalet']::tourism {
+  [tourism = 'hostel']::tourism {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 10;
