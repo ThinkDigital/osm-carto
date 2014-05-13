@@ -56,6 +56,31 @@
 
 
 .text {
+
+  [leisure = 'park']::leisure,
+  [leisure = 'recreation_ground']::leisure,
+  [landuse = 'recreation_ground']::landuse,
+  [landuse = 'conservation']::landuse,
+  [landuse = 'village_green']::landuse,
+  [leisure = 'common']::leisure,
+  [leisure = 'garden']::leisure,
+  [leisure = 'golf_course']::leisure,
+  [leisure = 'nature_reserve']::leisure {
+    [way_area >= 150000][zoom >= 14],
+    [way_area >= 80000][zoom >= 15],
+    [way_area >= 20000][zoom >= 16],
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 11;
+      text-fill: @park-text;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-halo-fill: rgba(255,255,255,0.6);
+      text-wrap-width: 30;
+      text-placement: interior;
+    }
+  }
+
   [place = 'island'][zoom >= 12]::place {
     text-name: "[name]";
     text-fill: #000;
