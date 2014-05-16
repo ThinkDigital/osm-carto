@@ -111,6 +111,7 @@ node,way   layer        text         linear
 node,way   leisure      text         polygon
 node,way   lock         text         linear
 node,way   man_made     text         polygon
+node,way   maritime     text         polygon
 node,way   military     text         polygon
 node,way   motorcar     text         linear
 node,way   name         text         linear
