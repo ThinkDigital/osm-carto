@@ -1,6 +1,9 @@
 /* For the main linear features, such as roads and railways. */
 
 
+
+
+                  //**Copyed here just for desiging purpose to see roads in different colors**
 /*
 
 @motorway-fill: #89a4cb;
@@ -27,6 +30,7 @@
 @taxiway-fill: #ffffff;
 @helipad-fill: #ffffff;
 
+
 */
 
 
@@ -35,10 +39,9 @@
 
 
 
-                       // **Temporary backup of first colum of colors**
 
 
-@motorway-fill: #89a4cb;
+@motorway-fill: #ffffff;
 @trunk-fill: #ffffff;
 @trunk-fill-alternative: #ffffff;
 @primary-fill: #ffffff;
@@ -64,23 +67,23 @@
 
 
 
-@default-casing: #ffffff;
-@motorway-casing: #ffffff;
-@trunk-casing: #ffffff;
-@primary-casing: #ffffff;
-@secondary-casing: #ffffff;
-@tertiary-casing: #ffffff;
-@residential-casing: #ffffff;
-@service-casing: #ffffff;
-@living-street-casing: #ffffff;
-@living-street-tunnel-casing: #ffffff;
-@pedestrian-casing: #ffffff;
-@path-casing: #ffffff;
-@footway-casing: #ffffff;
-@steps-casing: #ffffff;
-@cycleway-casing: #ffffff;
-@bridleway-casing: #ffffff;
-@track-casing: #ffffff;
+@default-casing: #d0ccc7;
+@motorway-casing: #d0ccc7;
+@trunk-casing: #d0ccc7;
+@primary-casing: #d0ccc7;
+@secondary-casing: #d0ccc7;
+@tertiary-casing: #d0ccc7;
+@residential-casing: #d0ccc7;
+@service-casing: #d0ccc7;
+@living-street-casing: #d0ccc7;
+@living-street-tunnel-casing: #d0ccc7;
+@pedestrian-casing: #d0ccc7;
+@path-casing: #d0ccc7;
+@footway-casing: #d0ccc7;
+@steps-casing: #d0ccc7;
+@cycleway-casing: #d0ccc7;
+@bridleway-casing: #d0ccc7;
+@track-casing: #d0ccc7;
 
 @residential-construction: #ffffff;
 @service-construction: #ffffff;
@@ -89,8 +92,8 @@
 @destination-marking: #ffffff;
 @private-marking: #ffffff;
 
-@tunnel-casing: #ffffff;
-@bridge-casing: #ffffff;
+@tunnel-casing: #d0ccc7;
+@bridge-casing: #d0ccc7;
 
 /*
 
