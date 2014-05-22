@@ -2,10 +2,10 @@
 // --- so para test ---
 
 @forest: #e0dece;
-@grass: #c2db84; // also meadow, common, garden, village_green, conservation
+@grass: #cbdf92; // also meadow, common, garden, village_green, conservation
 @golf_course: #b5e3b5;
-@natural: #c2db84; // also grassland
-@park: #c2db84; // also recreation_ground
+@natural: #cbdf92; // also grassland
+@park: #cbdf92; // also recreation_ground
 @wood: #e0dece;
 @vineyard: #abdf96;
 
@@ -22,7 +22,7 @@
 @apron: #e9d1ff;
 @attraction: #f2caea;
 @barracks: #ff8f8f;
-@campsite: #ccff99; // also caravan_site, picnic_site
+@campsite: #cbdf92; // also caravan_site, picnic_site
 @cemetery: #aacbaf; // also grave_yard
 @construction: #9d9d6c;
 @commercial: #efc8c8;
@@ -35,7 +35,7 @@
 @farmyard: #ddbf92;
 @farm: #ead8bd; // also farmland
 @parking: #f7efb7;
-@playground: #ccfff1;
+@playground: #cbdf92;
 @power: #bbb;
 @rest_area: #efc8c8; // also services
 @retail: #f1dada;
@@ -52,8 +52,6 @@
 
   [feature = 'leisure_playground'][zoom >= 13] {
     polygon-fill: @playground;
-    line-color: #666;
-    line-width: 0.3;
   }
 
   [feature = 'tourism_camp_site'],
@@ -61,9 +59,6 @@
   [feature = 'tourism_picnic_site'] {
     [zoom >= 13] {
       polygon-fill: @campsite;
-      polygon-opacity: 0.5;
-      line-color: #666;
-      line-width: 0.3;
     }
   }
 
@@ -294,12 +289,9 @@
   [feature = 'amenity_kindergarten'] {
     [zoom >= 10] {
       polygon-fill: @school;
-      [zoom >= 12] {
-        line-width: 0.3;
-        line-color: brown;
       }
-    }
   }
+  
 
   [feature = 'amenity_parking'][zoom >= 10] {
     polygon-fill: @parking;
@@ -361,8 +353,6 @@
 
   [leisure = 'pitch'][zoom >= 10] {
     polygon-fill: @pitch;
-    line-width: 0.5;
-    line-color: #888;
   }
 }
 
