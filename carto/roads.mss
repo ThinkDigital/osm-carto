@@ -4,8 +4,8 @@
 
 
                   //**Copyed here just for desiging purpose to see roads in different colors**
-/*
 
+/*
 @motorway-fill: #89a4cb;
 @trunk-fill: #ffffff;
 @trunk-fill-alternative: #ffffff;
@@ -29,17 +29,8 @@
 @runway-fill: #ffffff;
 @taxiway-fill: #ffffff;
 @helipad-fill: #ffffff;
-
-
 */
-
-
-
-
-
-
-
-
+//kullo
 
 @motorway-fill: #ffffff;
 @trunk-fill: #ffffff;
@@ -163,6 +154,7 @@
 @living-street-tunnel-fill: lighten(@living-street-fill, 10%);
 
 //--------------------------------------------------------------------------------------------------------------------------------
+
 
 
 @motorway-width-z12:              3;
@@ -2159,7 +2151,7 @@
     [zoom >= 7][zoom < 12] {
       line-width: 0.5;
       line-color: @primary-fill;
-      [zoom >= 9] { line-width: 1.2; }
+      [zoom >= 9] { line-width: 0.8; }
       [zoom >= 10] { line-width: 2; }
       [zoom >= 11] { line-width: 2.5; }
     }
@@ -2168,7 +2160,7 @@
   [feature = 'highway_secondary'],
   [feature = 'highway_secondary_link'] {
     [zoom >= 9][zoom < 12] {
-      line-width: 1;
+      line-width: 0.8;
       line-color: @secondary-fill;
       [zoom >= 11] { line-width: 2; }
     }
