@@ -2239,12 +2239,12 @@
       shield-size: 10;
       shield-fill: #fff;
       shield-placement: line;
-      shield-file: url("symbols/mot_shield[length].png");
+      shield-file: url("symbols/pri_shield[length].png");
       shield-spacing: 750;
       shield-min-distance: 30;
       shield-face-name: @bold-fonts;
-      [length = 7] { shield-file: url('symbols/mot_shield6.png'); }
-      [length = 8] { shield-file: url('symbols/mot_shield7.png'); }
+      [length = 7] { shield-file: url('symbols/pri_shield6.png'); }
+      [length = 8] { shield-file: url('symbols/pri_shield7.png'); }
     }
   }
 
@@ -2289,13 +2289,13 @@
       shield-size: 10;
       shield-fill: #fff;
       shield-placement: line;
-      shield-file: url("symbols/mot_shield[length].png");
+      shield-file: url("symbols/pri_shield[length].png");
       shield-spacing: 750;
       shield-min-distance: 30;
       shield-face-name: @bold-fonts;
       shield-avoid-edges: true;
-      [length = 7] { shield-file: url('symbols/mot_shield6.png'); }
-      [length = 8] { shield-file: url('symbols/mot_shield7.png'); }
+      [length = 7] { shield-file: url('symbols/pri_shield6.png'); }
+      [length = 8] { shield-file: url('symbols/pri_shield7.png'); }
     }
   }
 
@@ -2314,7 +2314,6 @@
   [highway = 'primary'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
-   // shield-fill: #fff;---------------------------------------------------------------------------------------------------------------------------kullo
     shield-fill: #fff;
     shield-placement: line;
     shield-file: url("symbols/pri_shield[length].png");
