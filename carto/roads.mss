@@ -8,18 +8,18 @@
 /*
 
 @motorway-fill: #89a4cb;
-@trunk-fill: #ffffff;
-@trunk-fill-alternative: #ffffff;
+@trunk-fill: yellow;
+@trunk-fill-alternative: brown;
 @primary-fill: red;
 @secondary-fill: green;
 @tertiary-fill: yellow;
 @residential-fill: black;
 @service-fill: blue;
-@living-street-fill: #ffffff;
-@pedestrian-fill: #ffffff;
-@road-fill: #ffffff;
-@path-fill: #ffffff;
-@footway-fill: #ffffff;
+@living-street-fill: red;
+@pedestrian-fill: green;
+@road-fill: yellow;
+@path-fill: brown;
+@footway-fill: purple;
 @steps-fill: #ffffff;
 @cycleway-fill: #ffffff;
 @bridleway-fill: #ffffff;
@@ -30,8 +30,8 @@
 @runway-fill: #ffffff;
 @taxiway-fill: #ffffff;
 @helipad-fill: #ffffff;
-*/
 
+*/
 
 
 
