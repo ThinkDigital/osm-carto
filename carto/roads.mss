@@ -5,6 +5,8 @@
 
                   //**Copyed here just for desiging purpose to see roads in different colors**
 
+/*
+
 @motorway-fill: #89a4cb;
 @trunk-fill: #ffffff;
 @trunk-fill-alternative: #ffffff;
@@ -28,10 +30,12 @@
 @runway-fill: #ffffff;
 @taxiway-fill: #ffffff;
 @helipad-fill: #ffffff;
+*/
 
 
 
-/*
+
+
 
 @motorway-fill: #ffffff;
 @trunk-fill: #ffffff;
@@ -56,7 +60,7 @@
 @runway-fill: #ffffff;
 @taxiway-fill: #ffffff;
 @helipad-fill: #ffffff;
-*/
+
 
 
 
