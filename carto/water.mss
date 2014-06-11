@@ -84,7 +84,7 @@
     line-color: @water-color;
     line-width: 0.7;
     [zoom >= 9] { line-width: 0.3; }
-    [zoom >= 10] { line-width: 1.6; }
+    [zoom >= 10] { line-width: 1; }
   }
 }
 

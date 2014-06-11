@@ -189,7 +189,7 @@
 
   [feature = 'landuse_farm'],
   [feature = 'landuse_farmland'] {
-    [zoom >= 9] {
+    [zoom >= 11] {
       polygon-fill: @farm;
     }
   }
@@ -215,7 +215,7 @@
 
   [feature = 'landuse_industrial'],
   [feature = 'landuse_railway'] {
-    [zoom >= 10] {
+    [zoom >= 12] {
       polygon-fill: @industrial;
     }
   }

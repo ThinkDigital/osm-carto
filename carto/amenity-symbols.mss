@@ -36,11 +36,6 @@
     point-placement: interior;
   }
 
-  [natural = 'peak'][zoom >= 11]::natural {
-    point-file: url('symbols/peak.png');
-    point-placement: interior;
-  }
-
   [natural = 'volcano'][zoom >= 11]::natural {
     point-file: url('symbols/volcano.png');
     point-placement: interior;
