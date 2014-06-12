@@ -1495,6 +1495,8 @@
     * The above defininitions should override this when needed
     * given the specitivity precedence.
     */
+	
+	
     [feature = 'highway_path'] {
       [zoom >= 13] {
         .tunnels-fill {
@@ -1520,6 +1522,7 @@
         }
       }
     }
+	
 
     [feature = 'highway_track'] {
       [zoom >= 13] {
@@ -2025,33 +2028,7 @@
   }
 }
 
-#highway-junctions {
-  [zoom >= 11] {
-    ref/text-name: "[ref]";
-    ref/text-size: 10;
-    ref/text-fill: #6666ff;
-    ref/text-min-distance: 2;
-    ref/text-face-name: @oblique-fonts;
-    ref/text-halo-radius: 1.5;
-    ref/text-wrap-width: 12;
-    [zoom >= 12] {
-      name/text-name: "[name]";
-      name/text-size: 9;
-      name/text-fill: #6666ff;
-      name/text-dy: -9;
-      name/text-face-name: @oblique-fonts;
-      name/text-halo-radius: 1;
-      name/text-wrap-character: ";";
-      name/text-wrap-width: 2;
-      name/text-min-distance: 2;
-    }
-    [zoom >= 15] {
-      ref/text-size: 12;
-      name/text-size: 11;
-      name/text-dy: -10;
-    }
-  }
-}
+
 
 .access::fill {
   [access = 'permissive'] {
