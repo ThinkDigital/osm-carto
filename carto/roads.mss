@@ -2239,11 +2239,18 @@
   }
 }
 
+
+
+
+
+
 #roads-text-ref-low-zoom {
+
+
   [highway = 'motorway'][length < 9] {
     [zoom >= 10][zoom < 13] {
       shield-name: "[ref]";
-      shield-size: 10;
+	  shield-size: 6;
       shield-fill: #222;
       shield-placement: line;
       shield-file: url("symbols/pri_shield[length].png");
@@ -2291,7 +2298,12 @@
   }
 }
 
+
+
 #roads-text-ref {
+
+
+
   [highway = 'motorway'][length < 9] {
     [zoom >= 13] {
       shield-name: "[ref]";
@@ -2580,44 +2592,44 @@
     [oneway = 'yes'] {
       dira/line-width: 1;
       dira/line-dasharray: 0,12,10,152;
-      dira/line-color: #6c70d5;
+      dira/line-color: #B1B1B0;
       dira/line-join: bevel;
       dira/line-clip: false;
       dirb/line-width: 2;
       dirb/line-dasharray: 0,12,9,153;
-      dirb/line-color: #6c70d5;
+      dirb/line-color: #B1B1B0;
       dirb/line-join: bevel;
       dirb/line-clip: false;
       dirc/line-width: 3;
       dirc/line-dasharray: 0,18,2,154;
-      dirc/line-color: #6c70d5;
+      dirc/line-color: #B1B1B0;
       dirc/line-join: bevel;
       dirc/line-clip: false;
       dird/line-width: 4;
       dird/line-dasharray: 0,18,1,155;
-      dird/line-color: #6c70d5;
+      dird/line-color: #B1B1B0;
       dird/line-join: bevel;
       dird/line-clip: false;
     }
     [oneway = '-1'] {
       dira/line-width: 1;
       dira/line-dasharray: 0,12,10,152;
-      dira/line-color: #6c70d5;
+      dira/line-color: #B1B1B0;
       dira/line-join: bevel;
       dira/line-clip: false;
       dirb/line-width: 2;
       dirb/line-dasharray: 0,13,9,152;
-      dirb/line-color: #6c70d5;
+      dirb/line-color: #B1B1B0;
       dirb/line-join: bevel;
       dirb/line-clip: false;
       dirc/line-width: 3;
       dirc/line-dasharray: 0,14,2,158;
-      dirc/line-color: #6c70d5;
+      dirc/line-color: #B1B1B0;
       dirc/line-join: bevel;
       dirc/line-clip: false;
       dird/line-width: 4;
       dird/line-dasharray: 0,15,1,158;
-      dird/line-color: #6c70d5;
+      dird/line-color: #B1B1B0;
       dird/line-join: bevel;
       dird/line-clip: false;
     }
