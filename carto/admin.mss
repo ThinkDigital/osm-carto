@@ -1,14 +1,21 @@
-@admin-boundaries: #ac46ac;
+@admin-boundaries: #4d5967;
+
+
 
 #admin-01234 {
-  [admin_level = '2'],
-  [admin_level = '3'] {
+
+
+
+  [admin_level = '2'] {
     [zoom >= 4] {
       line-color: @admin-boundaries;
       line-width: 0.6;
     }
     [zoom >= 7] {
       line-width: 2;
+    }
+	[zoom >= 9] {
+      line-width: 1;
     }
     [zoom >= 10] {
       [admin_level = '2'] {
@@ -21,46 +28,7 @@
       }
     }
   }
-  [admin_level = '4'] {
-    [zoom >= 4] {
-      line-color: @admin-boundaries;
-      line-width: 0.6;
-      line-dasharray: 4,3;
-      line-clip: false;
-    }
-    [zoom >= 7] {
-      line-width: 1;
-    }
-    [zoom >= 11] {
-      line-width: 3;
-    }
-  }
-  opacity: 0.4;
-}
-
-#admin-5678 {
-  [admin_level = '5'][zoom >= 11] {
-    line-color: @admin-boundaries;
-    line-width: 2;
-    line-dasharray: 6,3,2,3,2,3;
-    line-clip: false;
-  }
-  [admin_level = '6'][zoom >= 11] {
-    line-color: @admin-boundaries;
-    line-width: 2;
-    line-dasharray: 6,3,2,3;
-    line-clip: false;
-  }
-  [admin_level = '7'],
-  [admin_level = '8'] {
-    [zoom >= 12] {
-      line-color: @admin-boundaries;
-      line-width: 1.5;
-      line-dasharray: 5,2;
-      line-clip: false;
-    }
-  }
-  opacity: 0.5;
+  
 }
 
 #admin-other {
