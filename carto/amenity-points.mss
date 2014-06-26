@@ -9,31 +9,6 @@
     point-placement: interior;
   }
 
-  [tourism = 'guest_house'][zoom >= 17]::tourism {
-    point-file: url('symbols/guest_house.p.16.png');
-    point-placement: interior;
-  }
-
-  [tourism = 'bed_and_breakfast'][zoom >= 17]::tourism {
-    point-file: url('symbols/bandb.p.20.png');
-    point-placement: interior;
-  }
-
-  [tourism = 'hostel'][zoom >= 17]::tourism {
-    point-file: url('symbols/hostel.p.20.png');
-    point-placement: interior;
-  }
-
-  [tourism = 'hotel'][zoom >= 17]::tourism {
-    point-file: url('symbols/hotel2.p.20.png');
-    point-placement: interior;
-  }
-
-  [tourism = 'motel'][zoom >= 17]::tourism {
-    point-file: url('symbols/motel.p.20.png');
-    point-placement: interior;
-  }
-
   [amenity = 'parking'][zoom >= 15]::amenity {
     point-file: url('symbols/parking.p.16.png');
     point-placement: interior;
@@ -57,14 +32,8 @@
 
 .text {
 
-  [leisure = 'park']::leisure,
-  [leisure = 'recreation_ground']::leisure,
-  [landuse = 'recreation_ground']::landuse,
   [landuse = 'conservation']::landuse,
   [landuse = 'village_green']::landuse,
-  [leisure = 'common']::leisure,
-  [leisure = 'garden']::leisure,
-  [leisure = 'golf_course']::leisure,
   [leisure = 'nature_reserve']::leisure {
     [way_area >= 150000][zoom >= 14],
     [way_area >= 80000][zoom >= 15],
@@ -112,29 +81,6 @@
     text-halo-radius: 1;
     text-wrap-width: 10;
     text-placement: interior;
-  }
-
-  [natural = 'peak']::natural,
-  [natural = 'volcano']::natural {
-    [zoom >= 13] {
-      text-name: "[name]";
-      text-size: 10;
-      text-fill: brown;
-      text-dy: 7;
-      text-face-name: @book-fonts;
-      text-halo-radius: 1;
-      text-placement: interior;
-      ele/text-name: "[ele]";
-      ele/text-size: 9;
-      ele/text-fill: brown;
-      ele/text-dy: 6;
-      ele/text-face-name: @oblique-fonts;
-      ele/text-halo-radius: 1;
-      ele/text-placement: interior;
-      [name != ''] {
-        ele/text-dy: 19;
-      }
-    }
   }
 
   [natural = 'water']::natural,
@@ -243,17 +189,6 @@
     }
   }
 
-  [landuse = 'commercial']::landuse {
-    [zoom >= 15] {
-      text-name: "[name]";
-      text-size: 9;
-      text-fill: darken(@commercial, 60%);
-      text-face-name: @book-fonts;
-      text-halo-radius: 1;
-      text-wrap-width: 10;
-    }
-  }
-
   [landuse = 'brownfield']::landuse,
   [landuse = 'landfill']::landuse,
   [landuse = 'greenfield']::landuse,
@@ -304,40 +239,6 @@
     ele/text-face-name: @oblique-fonts;
     ele/text-halo-radius: 1;
     ele/text-placement: interior;
-  }
-
-  [tourism = 'hotel']::tourism,
-  [tourism = 'motel']::tourism,
-  [tourism = 'hostel']::tourism {
-    [zoom >= 17] {
-      text-name: "[name]";
-      text-size: 10;
-      text-fill: #0066ff;
-      text-dy: 11;
-      text-face-name: @book-fonts;
-      text-halo-radius: 1;
-      text-placement: interior;
-    }
-  }
-
-  [tourism = 'guest_house'][zoom >= 17]::tourism {
-    text-name: "[name]";
-    text-size: 8;
-    text-fill: #0066ff;
-    text-dy: 10;
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-placement: interior;
-  }
-
-  [tourism = 'bed_and_breakfast'][zoom >= 17]::tourism {
-    text-name: "[name]";
-    text-size: 8;
-    text-fill: #0066ff;
-    text-dy: 8;
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [amenity = 'fuel']::amenity,
