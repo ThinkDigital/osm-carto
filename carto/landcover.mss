@@ -2,10 +2,10 @@
 // --- so para test ---
 
 @forest: #e0dece;
-@grass: #cbdf92; // also meadow, common, garden, village_green, conservation
+@grass: #cfe29f; // also meadow, common, garden, village_green, conservation
 @golf_course: #b5e3b5;
-@natural: #cbdf92; // also grassland
-@park: #cbdf92; // also recreation_ground
+@natural: #cfe29f; // also grassland
+@park: #cfe29f; // also recreation_ground
 @wood: #e0dece;
 @vineyard: #abdf96;
 
@@ -31,17 +31,17 @@
 @field: #660;
 @garages: #996;
 @heath: #d6d99f;
-@industrial: #dfd1d6; // also railway
+@industrial: #ead5df; // also railway
 @farmyard: #ddbf92;
 @farm: #ead8bd; // also farmland
-@parking: #f7efb7;
+@parking: #f3dec6;
 @playground: #cbdf92;
 @power: #bbb;
 @rest_area: #efc8c8; // also services
 @retail: #f1dada;
 @residential: #ddd;
-@sand: #ffdf88;
-@school: #f0f0d8; // also university, college, hospital, kindergarten
+@sand: #f2ece6;
+@school: #ded6cc; // also university, college, hospital, kindergarten
 
 #landcover {
  [feature = 'leisure_swimming_pool'][zoom >= 14] {
@@ -361,7 +361,7 @@
   [landuse = 'military'][zoom >= 10]::landuse {
     polygon-pattern-file: url('symbols/military_red_hatch.png');
     polygon-pattern-alignment: global;
-    line-color: #f55;
+    line-color: #f8d7dc;
     line-width: 3;
     line-opacity: 0.329;
   }
