@@ -93,64 +93,6 @@
 @tunnel-casing: grey;
 @bridge-casing: black;
 
-/*
-
-                        **Backup of original colors**
-
-
-@motorway-fill: #89a4cb;
-@trunk-fill: #94d494;
-@trunk-fill-alternative: #97d397;
-@primary-fill: #dd9f9f;
-@secondary-fill: #f9d6aa;
-@tertiary-fill: #f8f8ba;
-@residential-fill: #ffffff;
-@service-fill: #ffffff;
-@living-street-fill: #ccc;
-@pedestrian-fill: #ededed;
-@road-fill: #ddd;
-@path-fill: black;
-@footway-fill: salmon;
-@steps-fill: @footway-fill;
-@cycleway-fill: blue;
-@bridleway-fill: green;
-@track-fill: #996600;
-@track-grade1-fill: #b37700;
-@track-grade2-fill: #a87000;
-@aeroway-fill: #bbc;
-@runway-fill: @aeroway-fill;
-@taxiway-fill: @aeroway-fill;
-@helipad-fill: @aeroway-fill;
-
-@default-casing: white;
-@motorway-casing: #7788a1;
-@trunk-casing: #7eae7e;
-@primary-casing: #c57b7e;
-@secondary-casing: #cca16a;
-@tertiary-casing: #c6c68a;
-@residential-casing: #bbb;
-@service-casing: #999;
-@living-street-casing: @default-casing;
-@living-street-tunnel-casing: #bbb;
-@pedestrian-casing: grey;
-@path-casing: @default-casing;
-@footway-casing: @default-casing;
-@steps-casing: @default-casing;
-@cycleway-casing: @default-casing;
-@bridleway-casing: @default-casing;
-@track-casing: @default-casing;
-
-@residential-construction: #aaa;
-@service-construction: #aaa;
-
-@permissive-marking: #cf9;
-@destination-marking: #c2e0ff;
-@private-marking: #efa9a9;
-
-@tunnel-casing: grey;
-@bridge-casing: black;
-
-*/
 
 @motorway-tunnel-fill: lighten(@motorway-fill, 25%);
 @trunk-tunnel-fill: lighten(@trunk-fill, 10%);
@@ -160,7 +102,10 @@
 @residential-tunnel-fill: lighten(@residential-fill, 10%);
 @living-street-tunnel-fill: lighten(@living-street-fill, 10%);
 
+
+
 //--------------------------------------------------------------------------------------------------------------------------------
+
 
 @motorway-width-z9:              4;
 
@@ -235,70 +180,11 @@
 @bridge-casing-width-z17:         0.75;
 
 
-/*
-
-                        **Backup of original numbers**
-
-@motorway-width-z12:              3;
-@motorway-link-width-z12:         1.5;
-@trunk-width-z12:                 3.5;
-@primary-width-z12:               3.5;
-@secondary-width-z12:             3;
-
-@motorway-width-z13:              6.5;
-@motorway-link-width-z13:         4.5;
-@trunk-width-z13:                 8.5;
-@primary-width-z13:               8.5;
-@secondary-width-z13:             9.5;
-@tertiary-width-z13:              6;
-@residential-width-z13:           3;
-
-@tertiary-width-z14:              7.5;
-@residential-width-z14:           4.5;
-
-@motorway-width-z15:             10.3;
-@motorway-link-width-z15:         7.8;
-@trunk-width-z15:                12.8;
-@primary-width-z15:              12.8;
-@secondary-width-z15:            12.8;
-@tertiary-width-z15:             11.2;
-@tertiary-link-width-z15:        11;
-@residential-width-z15:           8.3;
-
-@residential-width-z16:          11.2;
-
-@motorway-width-z17:             13.5; // shouldn't be narrower than trunk!
-@motorway-link-width-z17:        11.5;
-@trunk-width-z17:                18;
-@primary-width-z17:              18;
-@secondary-width-z17:            18;
-@tertiary-width-z17:             15.5;
-@tertiary-link-width-z17:        16;
-@residential-width-z17:          15.5;
-
-
-
-@casing-width-z12:                0.5;
-@casing-width-z13:                0.75;
-@residential-casing-width-z13:    0.5;
-@casing-width-z14:                0.75;
-@casing-width-z15:                0.9;
-@tertiary-link-casing-width-z15:  0.8;
-@casing-width-z16:                0.9;
-@casing-width-z17:                1.25;
-@tertiary-link-casing-width-z17:  1.5;
 
 
 
 
-@bridge-casing-width-z12:         0.5;
-@bridge-casing-width-z13:         0.5;
-@bridge-casing-width-z14:         0.5;
-@bridge-casing-width-z15:         0.75;
-@bridge-casing-width-z16:         0.75;
-@bridge-casing-width-z17:         0.75;
 
-*/
 
 .roads-casing, .bridges-casing, .tunnels-casing {
   ::casing_links {
@@ -2246,12 +2132,11 @@
 
 #roads-text-ref-low-zoom {
 
-
   [highway = 'motorway'][length < 9] {
     [zoom >= 10][zoom < 13] {
       shield-name: "[ref]";
-	  shield-size: 6;
-      shield-fill: #222;
+      shield-size: 10;
+      shield-fill: black;
       shield-placement: line;
       shield-file: url("symbols/pri_shield[length].png");
       shield-spacing: 750;
@@ -2267,34 +2152,40 @@
   [highway = 'trunk'][zoom >= 11][zoom < 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: black;
     shield-placement: line;
     shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
+    shield-face-name: @book-fonts;
+	  shield-halo-radius: 1.5;
+	  shield-wrap-width: 20;
   }
 
   [highway = 'primary'][zoom >= 11][zoom < 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: black;
     shield-placement: line;
     shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
+    shield-face-name: @book-fonts;
+	  shield-halo-radius: 1.5;
+	  shield-wrap-width: 20;
   }
 
   [highway = 'secondary'][zoom >= 12][zoom < 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: black;
     shield-placement: line;
     shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
+    shield-face-name: @book-fonts;
+	  shield-halo-radius: 1.5;
+	  shield-wrap-width: 20;
   }
 }
 
@@ -2308,12 +2199,14 @@
     [zoom >= 13] {
       shield-name: "[ref]";
       shield-size: 10;
-      shield-fill: #fff;
+      shield-fill: black;
       shield-placement: line;
       shield-file: url("symbols/pri_shield[length].png");
       shield-spacing: 750;
       shield-min-distance: 30;
-      shield-face-name: @bold-fonts;
+      shield-face-name: @book-fonts;
+	  shield-halo-radius: 1.5;
+	  shield-wrap-width: 20;
       shield-avoid-edges: true;
       [length = 7] { shield-file: url('symbols/pri_shield6.png'); }
       [length = 8] { shield-file: url('symbols/pri_shield7.png'); }
@@ -2323,48 +2216,56 @@
   [highway = 'trunk'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: black;
     shield-placement: line;
     shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
+    shield-face-name: @book-fonts;
+	  shield-halo-radius: 1.5;
+	  shield-wrap-width: 20;
     shield-avoid-edges: true;
   }
 
   [highway = 'primary'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: black;
     shield-placement: line;
     shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
+    shield-face-name: @book-fonts;
+	  shield-halo-radius: 1.5;
+	  shield-wrap-width: 20;
     shield-avoid-edges: true;
   }
 
   [highway = 'secondary'][bridge = 'no'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: black;
     shield-placement: line;
     shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
+    shield-face-name: @book-fonts;
+	  shield-halo-radius: 1.5;
+	  shield-wrap-width: 20;
     shield-avoid-edges: true;
   }
 
   [highway = 'tertiary'][bridge = 'yes'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
-    shield-fill: #fff;
+    shield-fill: black;
     shield-placement: line;
     shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
+    shield-face-name: @book-fonts;
+	  shield-halo-radius: 1.5;
+	  shield-wrap-width: 20;
     shield-avoid-edges: true;
   }
 
@@ -2446,7 +2347,7 @@
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 9;
-      text-fill: #000;
+      text-fill: black;
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
@@ -2462,7 +2363,7 @@
     [zoom >= 13] {
       text-name: "[name]";
       text-size: 9;
-      text-fill: #000;
+      text-fill: black;
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
