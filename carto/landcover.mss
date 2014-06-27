@@ -1,19 +1,19 @@
 // --- Parks, woods, other green things ---
 // --- so para test ---
 
-@forest: #e0dece;
+@forest: #cfe29f;
 @grass: #cfe29f; // also meadow, common, garden, village_green, conservation
-@golf_course: #b5e3b5;
+@golf_course: #cfe29f;
 @natural: #cfe29f; // also grassland
 @park: #cfe29f; // also recreation_ground
-@wood: #e0dece;
-@vineyard: #abdf96;
+@wood: #cfe29f;
+@vineyard: #cfe29f;
 
 // --- sports ---
 
-@stadium: #d5ef99; // also sports_centre
-@track: #74dcba;
-@pitch: #d5ef99;
+@stadium: #cfe29f; // also sports_centre
+@track: #cfe29f;
+@pitch: #cfe29f;
 
 // --- Other ----
 
@@ -25,7 +25,7 @@
 @campsite: #cbdf92; // also caravan_site, picnic_site
 @cemetery: #aacbaf; // also grave_yard
 @construction: #9d9d6c;
-@commercial: #efc8c8;
+@commercial: #e4ded6;
 @danger_area: pink;
 @desert: #e3b57a;
 @field: #660;
@@ -41,7 +41,7 @@
 @retail: #f1dada;
 @residential: #ddd;
 @sand: #f2ece6;
-@school: #ded6cc; // also university, college, hospital, kindergarten
+@school: #e4ded6; // also university, college, hospital, kindergarten
 
 #landcover {
  [feature = 'leisure_swimming_pool'][zoom >= 14] {
@@ -358,7 +358,7 @@
 
 
 #landuse-overlay {
-  [landuse = 'military'][zoom >= 10]::landuse {
+  [landuse = 'military'][zoom >= 12]::landuse {
     polygon-pattern-file: url('symbols/military_red_hatch.png');
     polygon-pattern-alignment: global;
     line-color: #f8d7dc;
