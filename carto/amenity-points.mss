@@ -9,7 +9,7 @@
     point-placement: interior;
   }
 
-  [amenity = 'parking'][zoom >= 15]::amenity {
+  [amenity = 'parking'][zoom >= 17]::amenity {
     point-file: url('symbols/parking.p.16.png');
     point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
