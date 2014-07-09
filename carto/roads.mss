@@ -125,7 +125,8 @@
 
 @tertiary-width-z14:              4;       //vaata seda hiljem!!!!!!!!!!!!
 @residential-width-z14:           1;       //vaata seda hiljem!!!!!!!!!!!!i
-@primary-width-z14:		  6;
+@primary-width-z14:		  			6;
+@service-width-z14: 			2.5;
 
 
 
@@ -139,7 +140,10 @@
 @residential-width-z15:           3;
 
 @residential-width-z16:          4;      //vaata seda hiljem!!!!!!!!!!!!
-@secondary-width-z16:            4;      //POOOOOOOOOOOOOOOOOOOOOOLLLEEELLLLIIIIII-------------------------------------------------------------------------------------------------------------------
+@secondary-width-z16:			 4;
+@service-width-z16:    			6;            
+@minor-service-width-z16: 		4;
+
 
 
 @motorway-width-z17:             13.5; // shouldn't be narrower than trunk!
@@ -150,8 +154,11 @@
 @tertiary-width-z17:             9;
 @tertiary-link-width-z17:        8.7;
 @residential-width-z17:          6.75;
+@service-width-z17: 				7;
 
 @residential-width-z18:          6.75;
+@service-width-z18: 			 6;
+
 
 
 @casing-width-z8:				  0.5;
@@ -166,6 +173,7 @@
 @tertiary-link-casing-width-z15:  0.8;
 @casing-width-z16:                0.9;
 @casing-width-z17:                1.25;
+@casing-width-z18:                1.1;
 @tertiary-link-casing-width-z17:  1.5;
 
 
@@ -469,26 +477,23 @@
       [zoom >= 16][service = 'INT-minor'] {
         line-color: @service-casing;
         [service = 'INT-normal'] {
-          .roads-casing, .tunnels-casing {
-            line-width: 2.5;
-            [zoom >= 16] { line-width: 7; }
-          }
-          .bridges-casing {
-            line-width: 3;
-            [zoom >= 16] { line-width: 8; }
-          }
+          line-width: @service-width-z14;
+          [zoom >= 16] { line-width: @service-width-z16; }
+          [zoom >= 17] { line-width: @service-width-z17; }
+		  [zoom = 18] { line-width: @service-width-z18; }
         }
         [service = 'INT-minor'] {
-          line-width: 4;
+          line-width: @minor-service-width-z16;
         }
-        line-join: round;
-        line-cap: round;
+        .roads-casing {
+          line-join: round;
+          line-cap: round;
+        }
         .tunnels-casing { line-dasharray: 4,2; }
         .bridges-casing {
           line-color: @bridge-casing;
           line-join: round;
-          line-cap: butt;
-	  line-opacity: @bridge-casing-opacity;
+		  line-opacity: @bridge-casing-opacity;
         }
       }
     }
@@ -1215,14 +1220,29 @@
       [zoom >= 16][service = 'INT-minor'] {
         line-color: @service-fill;
         [service = 'INT-normal'] {
-          line-width: 2;
-          [zoom >= 16] { line-width: 6; }
+          line-width: @service-width-z14 - 2 * @casing-width-z14;
+          [zoom >= 16] { line-width: @service-width-z16 - 2 * @casing-width-z16; }
+          [zoom >= 17] { line-width: @service-width-z17 - 2 * @casing-width-z17; }
+		  [zoom = 18] { line-width: @service-width-z18 - 2 * @casing-width-z18; }
         }
         [service = 'INT-minor'] {
-          line-width: 3;
+          line-width: @minor-service-width-z16 - 2 * @casing-width-z16;
         }
         line-join: round;
         line-cap: round;
+        .tunnels-fill {
+          line-color: darken(white, 5%);
+        }
+        .bridges-fill {
+          [service = 'INT-normal'] {
+            line-width: @service-width-z14 - 2 * @bridge-casing-width-z14;
+            [zoom >= 16] { line-width: @service-width-z16 - 2 * @bridge-casing-width-z16; }
+            [zoom >= 17] { line-width: @service-width-z17 - 2 * @bridge-casing-width-z17; }
+          }
+          [service = 'INT-minor'] {
+            line-width: @minor-service-width-z16 - 2 * @bridge-casing-width-z16;
+          }
+        }
       }
     }
 
@@ -1929,6 +1949,8 @@
         access/line-opacity: 0.5;
       }
     }
+	
+	/*
     [feature = 'highway_service'][service = 'INT-normal'][zoom >= 15],
     [feature = 'highway_service'][zoom >= 16] {
       access/line-width: 3;
@@ -1939,6 +1961,7 @@
       access/line-opacity: 0.5;
       [zoom >= 16] { access/line-width: 6; }
     }
+	*/
   }
   [access = 'destination'] {
     [feature = 'highway_secondary'],
