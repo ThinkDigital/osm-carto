@@ -150,11 +150,11 @@
 @motorway-link-width-z17:        11.5;
 @trunk-width-z17:                18;
 @primary-width-z17:              10.8;
-@secondary-width-z17:            10.8;
+@secondary-width-z17:            8.5;
 @tertiary-width-z17:             9;
 @tertiary-link-width-z17:        8.7;
 @residential-width-z17:          6.75;
-@service-width-z17: 				7;
+@service-width-z17: 				6;
 
 @residential-width-z18:          6.75;
 @service-width-z18: 			 6;
@@ -509,6 +509,7 @@
           [zoom >= 14] { line-width: 3.6; }
 		  [zoom >= 15] { line-width: 4; }
           [zoom >= 16] { line-width: 4; }
+		  [zoom >= 17] { line-width: 2.5; }
 		  [zoom >= 18] { line-width: 2.5; }
           .tunnels-casing {
             line-dasharray: 4,2;
@@ -521,6 +522,7 @@
           [zoom >= 14] { line-width: 3.8; }
           [zoom >= 15] { line-width: 7; }
           [zoom >= 16] { line-width: 9.5; }
+		  [zoom >= 17] { line-width: 4; }
 		  [zoom >= 18] { line-width: 4; }
         }
       }
@@ -1191,7 +1193,8 @@
           [zoom >= 14] { line-width: 3; }
           [zoom >= 15] { line-width: 6.5; }
           [zoom >= 16] { line-width: 9.4; }
-          [zoom >= 17] { line-width: 13; }
+          [zoom >= 17] { line-width: 4.75; }
+		  [zoom >= 18] { line-width: 4.75; }
         }
         .bridges-fill {
           line-width: 3.5;
@@ -1253,6 +1256,7 @@
         [zoom >= 14] { line-width: 3; }
         [zoom >= 15] { line-width: 5.5; }
         [zoom >= 16] { line-width: 8; }
+		[zoom >= 17] { line-width: 1.7; }
 		[zoom >= 18] { line-width: 1.7; }
         line-join: round;
         line-cap: round;
@@ -1936,6 +1940,7 @@
 
 
 .access::fill {
+
   [access = 'permissive'] {
     [feature = 'highway_unclassified'],
     [feature = 'highway_residential'],
@@ -1950,7 +1955,9 @@
       }
     }
 	
+	
 	/*
+	
     [feature = 'highway_service'][service = 'INT-normal'][zoom >= 15],
     [feature = 'highway_service'][zoom >= 16] {
       access/line-width: 3;
@@ -1961,7 +1968,9 @@
       access/line-opacity: 0.5;
       [zoom >= 16] { access/line-width: 6; }
     }
+	
 	*/
+	
   }
   [access = 'destination'] {
     [feature = 'highway_secondary'],
