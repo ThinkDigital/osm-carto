@@ -1,5 +1,5 @@
 #buildings-lz {
-  [zoom >= 10] {
+  [zoom >= 14] {
     [railway = 'station']::railway,
     [building = 'station'] {
       polygon-fill: #d4aaaa;
@@ -27,11 +27,11 @@
 }
 
 #buildings {
-  [building = 'INT-light'][zoom >= 12] {
+  [building = 'INT-light'][zoom >= 14] {
     polygon-fill: #ded6ce;
     polygon-clip: false;
   }
-  [building != 'INT-light'][building != ''][zoom >= 12] {
+  [building != 'INT-light'][building != ''][zoom >= 14] {
     polygon-fill: #ded6ce;
     polygon-clip: false;
     [zoom >= 16] {
@@ -39,12 +39,10 @@
       line-width: 0.2;
     }
   }
-  [aeroway = 'terminal'][zoom >= 12]::aeroway {
+  [aeroway = 'terminal'][zoom >= 14]::aeroway {
     polygon-fill: #ded6ce;
     polygon-clip: false;
-    [zoom >= 14] {
-      line-color: #E1D9D2;
-      line-width: 0.2;
-    }
+    line-color: #E1D9D2;
+    line-width: 0.2;
   }
 }
