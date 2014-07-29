@@ -2170,7 +2170,7 @@
     [zoom >= 7][zoom < 11] {
       line-width: 0.5;
       line-color: @primary-fill;
-      [zoom >= 9] { line-width: 0.5; }
+      [zoom >= 9] { line-width: 0.7; }
       [zoom >= 10] { line-width: 1; }
     }
   }
@@ -2180,6 +2180,7 @@
     [zoom >= 9][zoom < 11] {
       line-width: 0.5;
       line-color: @secondary-fill;
+	  [zoom >= 9] { line-width: 0.7; }
     }
   }
 
