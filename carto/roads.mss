@@ -2142,10 +2142,11 @@
 
   [feature = 'highway_motorway'],
   [feature = 'highway_motorway_link'] {
-    [zoom >= 5][zoom < 8] {
+    [zoom >= 5][zoom <= 8] {
       line-width: 0.5;
       line-color: @motorway-fill;
       [zoom >= 7] { line-width: 1; }
+	  [zoom >= 8] { line-width: 1.5; }
     }
   }
 
