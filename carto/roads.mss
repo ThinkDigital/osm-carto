@@ -321,8 +321,9 @@
   }
 
   ::casing {
-    [zoom >= 9] {
+    
       [feature = 'highway_motorway'] {
+	    [zoom >= 9] {
         [zoom >= 9] { line-width: @motorway-width-z9; }
 		[zoom >= 10] { line-width: @motorway-width-z11; }
 		[zoom >= 12] { line-width: @motorway-width-z12; }
