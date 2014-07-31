@@ -3,9 +3,7 @@
 
 
 
-                  //**Copyed here just for desiging purpose to see roads in different colors**
-
-
+//**Copyed here just for desiging purpose to see roads in different colors**
 /*
 @motorway-fill: #89a4cb;
 @trunk-fill: white;
@@ -114,7 +112,7 @@
 @primary-width-z11:               3.5;
 @secondary-width-z11:             3.5;
 
-@motorway-width-z12:              5.6;
+@motorway-width-z12:              4.8;
 @motorway-link-width-z12:         4;
 @trunk-width-z12:                 3;
 @primary-width-z12:               4.2;
@@ -669,6 +667,7 @@
         }
       }
     }
+	
 
     [feature = 'railway_rail'],
     [feature = 'railway_preserved'],
@@ -682,18 +681,7 @@
         }
       }
     }
-
-    [feature = 'railway_INT-spur-siding-yard'] {
-      .bridges-casing {
-        [zoom >= 13] {
-          line-width: 5.7;
-          line-color: black;
-          line-join: round;
-		  line-opacity: @bridge-casing-opacity;
-        }
-      }
-    }
-
+	
     [feature = 'railway_disused'],
     [feature = 'railway_abandoned'],
     [feature = 'railway_construction'],
@@ -822,17 +810,6 @@
         line-width: 5;
         line-color: white;
         line-join: round;
-      }
-    }
-
-    [feature = 'railway_INT-spur-siding-yard'] {
-      .bridges-casing {
-        [zoom >= 13] {
-          line-width: 4;
-          line-color: white;
-          line-join: round;
-          line-cap: round;
-        }
       }
     }
 
@@ -1603,6 +1580,7 @@
       }
     }
 
+
     [feature = 'railway_narrow_gauge'] {
       [zoom >= 13] {
         line/line-width: 2;
@@ -1619,6 +1597,7 @@
       }
     }
 
+
     [feature = 'railway_funicular'] {
       [zoom >= 13] {
         line/line-width: 2;
@@ -1634,6 +1613,7 @@
         }
       }
     }
+
 
     [feature = 'railway_miniature'] {
       [zoom >= 15] {
@@ -2051,7 +2031,7 @@
     }
 	
 	
-	/*
+	
 	
     [feature = 'highway_service'][service = 'INT-normal'][zoom >= 15],
     [feature = 'highway_service'][zoom >= 16] {
@@ -2064,7 +2044,7 @@
       [zoom >= 16] { access/line-width: 6; }
     }
 	
-	*/
+	
 	
   }
   
@@ -2193,6 +2173,7 @@
       }
     }
   }
+
 
   [feature = 'railway_INT-spur-siding-yard'] {
     [zoom >= 11] {
