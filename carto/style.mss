@@ -17,19 +17,3 @@ Map {
 
 @water-color: #82d3ea;
 @land-color: #ebe5e0;
-
-
-#world {
-  ::outline {
-    ::shadow {
-      line-color: rgba(0, 0, 0, 0.1);
-      line-width: 3;
-    }
-    line-color: rgba(0, 0, 0, 0.2);
-    line-width: 2;
-    line-join: round;
-  }
-}
-
-
-
