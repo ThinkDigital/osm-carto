@@ -23,7 +23,7 @@
     text-placement: interior;
   }
 
-  [railway = 'level_crossing'][zoom >= 14]::railway {
+  [railway = 'level_crossing'][zoom >= 15]::railway {
     point-file: url('symbols/level_crossing.png');
     point-placement: interior;
     [zoom >= 16] {

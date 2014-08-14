@@ -545,13 +545,10 @@
 
     [feature = 'railway_tram'] {
       .bridges-casing {
-        [zoom >= 13] {
-          line-width: 4;
           [zoom >= 15] {
             line-width: 5;
-          }
-          line-color: black;
-          line-join: round;
+            line-color: black;
+            line-join: round;
         }
       }
     }
@@ -742,13 +739,11 @@
 	
 	[feature = 'railway_tram'] {
       .bridges-casing {
-        [zoom >= 13] {
-          line-width: 3;
           [zoom >= 15] {
             line-width: 4;
           }
           line-color: white;
-        }
+        
       }
     }
 
@@ -1440,12 +1435,9 @@
     }
 
     [feature = 'railway_tram'] {
-     [zoom >= 13] {
+     [zoom >= 15] {
         line-color: #444;
-        line-width: 1;
-        [zoom >= 15] {
-          line-width: 2;
-        }
+        line-width: 2;
         .tunnels-fill {
           line-dasharray: 5,3;
         }
@@ -1990,7 +1982,6 @@
     }
   }
 
-  [feature = 'railway_tram'],
   [feature = 'railway_light_rail'],
   [feature = 'railway_funicular'],
   [feature = 'railway_narrow_gauge'] {
